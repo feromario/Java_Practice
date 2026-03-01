@@ -1,0 +1,22 @@
+package Searching;
+
+public class LinearSearch {
+    // main method
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5,6,7,8,9,10};
+        int target = 8;
+
+        int result = linearSearch(arr,target);
+        System.out.println("Key found at index: " + result + ".");
+    }
+
+    // linear search method
+    public static int linearSearch(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
